@@ -1,0 +1,171 @@
+.detail {
+  min-height: 100vh;
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.postDetail {
+  margin: 20px;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  border-radius: 50%;
+  margin-right: 20px;
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.postAuthor {
+  display: flex;
+  align-items: center;
+}
+
+.postAuthor .avatar {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.postAuthor .author-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.postDetailTitle {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.postDetailCategories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.postDetailCategory {
+  padding: 10px;
+  background-color: slateblue;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.postDetailPhoto {
+  margin-top: 15px;
+  width: 100%;
+  height: 300px;
+  min-height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.postDetailDescription {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.5rem;
+}
+
+.postDetailInfo {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.postDetailDate {
+  margin-right: 5px;
+}
+
+.postDetailOS {
+  margin-left: 5px;
+}
+
+.postDetailInteract {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.postDetailInteract .like {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.postDetailcommentBox {
+  width: 100%;
+}
+
+.postDetailComment {
+  display: flex;
+  align-items: center;
+}
+
+#input {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.postDetailcommentSections {
+  margin-top: 15px;
+}
+
+.postDetailcommentSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.postCommentAuthor {
+  margin-left: 15px;
+}
+
+.postCommentAvatar {
+  font-weight: 700;
+}
+
+.postComment {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}

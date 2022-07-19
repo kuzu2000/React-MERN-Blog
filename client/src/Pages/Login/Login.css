@@ -1,0 +1,115 @@
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 400px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.box h2 {
+  text-transform: uppercase;
+  margin: 0 0 35px;
+  padding: 0;
+}
+
+.box input {
+  padding: 10px 0px;
+  margin-bottom: 30px;
+}
+
+.box input,
+.box button {
+  width: 100%;
+  box-shadow: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+.box button[type='submit'] {
+  border-bottom: none;
+  cursor: pointer;
+  background-color: slateblue;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.box button[type='submit']:disabled {
+  cursor: not-allowed;
+  background-color: rgb(146, 133, 231);
+}
+
+.box form div {
+  position: relative;
+}
+
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.box input:focus ~ label,
+.box input:not(:focus):valid ~ label {
+  top: -12px;
+  left: 0;
+  color: inherit;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.box input[type='text']:focus,
+.box input[type='text']:valid,
+.box input[type='email']:focus,
+.box input[type='email']:valid {
+  border-bottom: 2px solid black;
+}
+
+.box input[type='submit']:hover {
+  filter: brightness(120%);
+}
+
+.errorBox {
+  position: absolute;
+  top: 70px;
+  color: red;
+}
+
+.home-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  width: 400px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.home-box .link {
+  margin-top: 5px;
+  text-decoration: underline;
+  color: slateblue;
+  font-size: 1.25rem;
+  cursor: pointer;
+}

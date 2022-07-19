@@ -1,0 +1,130 @@
+.profilePage {
+  min-height: 100vh;
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.profilePage > h2 {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profileType {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  height: 100%;
+}
+
+.profileName {
+  height: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.profilePhoto {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profilePhoto > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.profilePhoto > label > i {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: white;
+  background-color: slateblue;
+  cursor: pointer;
+}
+
+.profilePhoto > label > i:focus {
+  outline-style: none;
+}
+
+.profilePhotoInput {
+  width: 30%;
+}
+
+.profileName > h2,
+.profilePassword > h2 {
+  color: slateblue;
+  margin-bottom: 20px;
+}
+
+.profileName > label,
+.profilePassword > label {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+
+.profileName > input,
+.profilePassword > input {
+  margin-top: 5px;
+  width: 50%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-bottom: 3px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.profileName > input:focus,
+.profilePassword > input:focus {
+  border-bottom: 3px solid slateblue;
+}
+
+.profileButton {
+  text-align: center !important;
+  margin-top: 20px;
+}
+
+.profileButton > button {
+  padding: 1rem 1rem !important;
+  background-color: slateblue;
+  color: white;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profileButton > button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 1rem rgb(0 0 0 / 15%);
+}
+
+.profileButton > button:focus {
+  background-color: rgb(146, 133, 231);
+}
+
+.profilePassword {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}

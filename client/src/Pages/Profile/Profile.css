@@ -1,0 +1,54 @@
+.myProfile {
+  min-height: 100vh;
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.myProfile > .header {
+  width: 100%;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.header .headerTop {
+  display: flex;
+}
+
+.myProfile > .myProfileInfo {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.myprofilePicture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 1rem 1rem rgba(0 0 0 / 25%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.myProfileName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.myProfile > h3 {
+  margin-top: 15px;
+}

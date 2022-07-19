@@ -1,0 +1,495 @@
+.grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.8fr 1fr;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fixed-nav {
+  position: fixed;
+}
+
+nav .fixed-nav img {
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+nav .fixed-nav img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav .fixed-nav ul {
+  list-style: none;
+}
+
+nav .fixed-nav ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  transition: 0.4s;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+nav .fixed-nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav .fixed-nav ul li:last-child {
+  margin-top: 10px;
+}
+
+nav .fixed-nav ul .logOutPopUp {
+  position: relative;
+}
+
+.logOutChildren {
+  position: absolute;
+  top: -130px;
+  right: -30px;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logoutProfileDetail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.logoutProfile {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.logoutButton {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.logoutButton > button {
+  padding: 10px;
+  background-color: slateblue;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.logoutButton > button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 1rem rgb(0 0 0 / 15%);
+}
+
+nav .fixed-nav ul li .profile {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+nav .fixed-nav h3 {
+  margin-top: 20px;
+}
+
+.messageBar {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.messageBar input {
+  border: none;
+  outline: none;
+}
+
+.messageBar i {
+  cursor: pointer;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+main > h2 {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.posts {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.post {
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.post .postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.post .postHeader .author {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post .postHeader .author .avatar {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.post .postHeader .author .author-name {
+  font-weight: 600;
+}
+
+.post .postHeader .menu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.post .postHeader .menu:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.post .postHeader .menu .menuLists {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  top: 40px;
+  right: 10px;
+  background-color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+  width: 200px;
+  display: none;
+}
+
+.post .postHeader .menu .menuLists.open {
+  display: block;
+  z-index: 9;
+}
+
+.post .postHeader .menu .menuLists .menuList {
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.menuList:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.post .postHeader .menu .dot {
+  margin-left: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.post .img {
+  width: 100%;
+  min-height: 50px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.post .img .category {
+  padding: 10px;
+  background-color: slateblue;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.post .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+
+.post .header .title {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.post .description {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: rgb(22, 77, 77);
+  margin: 5px 10px;
+}
+
+.post .info {
+  padding: 10px 0;
+  background-color: rgb(206, 206, 206);
+}
+
+.post .info .info-container {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .info .info-container .like {
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.searchBar {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px 80px;
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+}
+
+.searchBar i {
+  cursor: pointer;
+}
+
+.categories {
+  margin: 30px 40px;
+}
+
+.categories h3 {
+  margin-bottom: 25px;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.categories ul li:last-child {
+  border-bottom: none;
+}
+
+.trending {
+  margin-top: 30px;
+}
+
+.trending h3 {
+  margin-bottom: 20px;
+  margin: 20px 40px;
+}
+
+.trending .articles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 40px;
+}
+
+.article {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.articleImg {
+  width: 130px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.articleInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#title:hover {
+  color: slateblue;
+}
+
+.articleDate {
+  margin-top: 5px;
+}
+
+.articleAuthor {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup {
+  font-family: sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  background-color: #eee;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 32px #131a26;
+}
+
+.closePopup {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  top: 16px;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  color: #131a26;
+  cursor: pointer;
+}
+
+.popup h3 {
+  color: #131a26;
+  margin-bottom: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.add-todo-input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+.button {
+  padding: 16px 32px;
+  border-radius: 999px;
+  background-color: slateblue;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
